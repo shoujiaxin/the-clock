@@ -11,58 +11,19 @@
 		291374042BF90A6300490279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291374032BF90A6300490279 /* ContentView.swift */; };
 		291374062BF90A6400490279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374052BF90A6400490279 /* Assets.xcassets */; };
 		2913740A2BF90A6400490279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374092BF90A6400490279 /* Preview Assets.xcassets */; };
-		291374142BF90A6400490279 /* FlipClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291374132BF90A6400490279 /* FlipClockTests.swift */; };
-		2913741E2BF90A6400490279 /* FlipClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2913741D2BF90A6400490279 /* FlipClockUITests.swift */; };
-		291374202BF90A6400490279 /* FlipClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2913741F2BF90A6400490279 /* FlipClockUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		291374102BF90A6400490279 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 291373F62BF90A6300490279 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 291373FD2BF90A6300490279;
-			remoteInfo = FlipClock;
-		};
-		2913741A2BF90A6400490279 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 291373F62BF90A6300490279 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 291373FD2BF90A6300490279;
-			remoteInfo = FlipClock;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		291373FE2BF90A6300490279 /* FlipClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		291373FE2BF90A6300490279 /* Flippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291374012BF90A6300490279 /* FlipClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockApp.swift; sourceTree = "<group>"; };
 		291374032BF90A6300490279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		291374052BF90A6400490279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291374072BF90A6400490279 /* FlipClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipClock.entitlements; sourceTree = "<group>"; };
 		291374092BF90A6400490279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2913740F2BF90A6400490279 /* FlipClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		291374132BF90A6400490279 /* FlipClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTests.swift; sourceTree = "<group>"; };
-		291374192BF90A6400490279 /* FlipClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2913741D2BF90A6400490279 /* FlipClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockUITests.swift; sourceTree = "<group>"; };
-		2913741F2BF90A6400490279 /* FlipClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		291373FB2BF90A6300490279 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2913740C2BF90A6400490279 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		291374162BF90A6400490279 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +37,6 @@
 			isa = PBXGroup;
 			children = (
 				291374002BF90A6300490279 /* FlipClock */,
-				291374122BF90A6400490279 /* FlipClockTests */,
-				2913741C2BF90A6400490279 /* FlipClockUITests */,
 				291373FF2BF90A6300490279 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +44,7 @@
 		291373FF2BF90A6300490279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				291373FE2BF90A6300490279 /* FlipClock.app */,
-				2913740F2BF90A6400490279 /* FlipClockTests.xctest */,
-				291374192BF90A6400490279 /* FlipClockUITests.xctest */,
+				291373FE2BF90A6300490279 /* Flippy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,29 +69,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		291374122BF90A6400490279 /* FlipClockTests */ = {
-			isa = PBXGroup;
-			children = (
-				291374132BF90A6400490279 /* FlipClockTests.swift */,
-			);
-			path = FlipClockTests;
-			sourceTree = "<group>";
-		};
-		2913741C2BF90A6400490279 /* FlipClockUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2913741D2BF90A6400490279 /* FlipClockUITests.swift */,
-				2913741F2BF90A6400490279 /* FlipClockUITestsLaunchTests.swift */,
-			);
-			path = FlipClockUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		291373FD2BF90A6300490279 /* FlipClock */ = {
+		291373FD2BF90A6300490279 /* Flippy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 291374232BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClock" */;
+			buildConfigurationList = 291374232BF90A6400490279 /* Build configuration list for PBXNativeTarget "Flippy" */;
 			buildPhases = (
 				291373FA2BF90A6300490279 /* Sources */,
 				291373FB2BF90A6300490279 /* Frameworks */,
@@ -144,46 +84,10 @@
 			);
 			dependencies = (
 			);
-			name = FlipClock;
+			name = Flippy;
 			productName = FlipClock;
-			productReference = 291373FE2BF90A6300490279 /* FlipClock.app */;
+			productReference = 291373FE2BF90A6300490279 /* Flippy.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2913740E2BF90A6400490279 /* FlipClockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 291374262BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClockTests" */;
-			buildPhases = (
-				2913740B2BF90A6400490279 /* Sources */,
-				2913740C2BF90A6400490279 /* Frameworks */,
-				2913740D2BF90A6400490279 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				291374112BF90A6400490279 /* PBXTargetDependency */,
-			);
-			name = FlipClockTests;
-			productName = FlipClockTests;
-			productReference = 2913740F2BF90A6400490279 /* FlipClockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		291374182BF90A6400490279 /* FlipClockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 291374292BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClockUITests" */;
-			buildPhases = (
-				291374152BF90A6400490279 /* Sources */,
-				291374162BF90A6400490279 /* Frameworks */,
-				291374172BF90A6400490279 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2913741B2BF90A6400490279 /* PBXTargetDependency */,
-			);
-			name = FlipClockUITests;
-			productName = FlipClockUITests;
-			productReference = 291374192BF90A6400490279 /* FlipClockUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,14 +101,6 @@
 				TargetAttributes = {
 					291373FD2BF90A6300490279 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					2913740E2BF90A6400490279 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 291373FD2BF90A6300490279;
-					};
-					291374182BF90A6400490279 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 291373FD2BF90A6300490279;
 					};
 				};
 			};
@@ -221,9 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				291373FD2BF90A6300490279 /* FlipClock */,
-				2913740E2BF90A6400490279 /* FlipClockTests */,
-				291374182BF90A6400490279 /* FlipClockUITests */,
+				291373FD2BF90A6300490279 /* Flippy */,
 			);
 		};
 /* End PBXProject section */
@@ -235,20 +129,6 @@
 			files = (
 				2913740A2BF90A6400490279 /* Preview Assets.xcassets in Resources */,
 				291374062BF90A6400490279 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2913740D2BF90A6400490279 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		291374172BF90A6400490279 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,37 +144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2913740B2BF90A6400490279 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				291374142BF90A6400490279 /* FlipClockTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		291374152BF90A6400490279 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				291374202BF90A6400490279 /* FlipClockUITestsLaunchTests.swift in Sources */,
-				2913741E2BF90A6400490279 /* FlipClockUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		291374112BF90A6400490279 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 291373FD2BF90A6300490279 /* FlipClock */;
-			targetProxy = 291374102BF90A6400490279 /* PBXContainerItemProxy */;
-		};
-		2913741B2BF90A6400490279 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 291373FD2BF90A6300490279 /* FlipClock */;
-			targetProxy = 2913741A2BF90A6400490279 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		291374212BF90A6400490279 /* Debug */ = {
@@ -439,7 +289,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClock;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.Flippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -477,103 +327,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClock;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.Flippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		291374272BF90A6400490279 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TA5C5ASM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlipClock";
-			};
-			name = Debug;
-		};
-		291374282BF90A6400490279 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TA5C5ASM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlipClock";
-			};
-			name = Release;
-		};
-		2913742A2BF90A6400490279 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TA5C5ASM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlipClock;
-			};
-			name = Debug;
-		};
-		2913742B2BF90A6400490279 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TA5C5ASM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.FlipClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlipClock;
 			};
 			name = Release;
 		};
@@ -589,29 +349,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		291374232BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClock" */ = {
+		291374232BF90A6400490279 /* Build configuration list for PBXNativeTarget "Flippy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				291374242BF90A6400490279 /* Debug */,
 				291374252BF90A6400490279 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		291374262BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				291374272BF90A6400490279 /* Debug */,
-				291374282BF90A6400490279 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		291374292BF90A6400490279 /* Build configuration list for PBXNativeTarget "FlipClockUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2913742A2BF90A6400490279 /* Debug */,
-				2913742B2BF90A6400490279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
