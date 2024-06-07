@@ -1,6 +1,6 @@
 //
 //  FlipClockApp.swift
-//  FlipClock
+//  Flippy
 //
 //  Created by Jiaxin Shou on 2024/5/19.
 //
