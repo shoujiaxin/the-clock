@@ -31,7 +31,7 @@ struct Flap: View {
     var body: some View {
         GeometryReader { geometry in
             let size = geometry.size
-            let cornerRadius = configuration.cornerRadius ?? min(size.width, size.height) / 10
+            let cornerRadius = configuration.cornerRadius ?? min(size.width, size.height) * 0.1
 
             UnevenRoundedRectangle(
                 topLeadingRadius: cornerRadius,
@@ -39,11 +39,12 @@ struct Flap: View {
                 bottomTrailingRadius: 0,
                 topTrailingRadius: cornerRadius
             )
-            .frame(width: size.width, height: size.height / 2)
+            .foregroundStyle(configuration.theme.backgroundColor)
+            .frame(width: size.width, height: size.height * 0.49)
             .overlay(alignment: .top) {
-                ScalableText(isFlipped ? configuration.backContent : configuration.frontContent)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.white)
+                FlapText(isFlipped ? configuration.backContent : configuration.frontContent)
+                    .foregroundStyle(configuration.theme.foregroundColor)
+                    .padding(min(size.width, size.height) * 0.1)
                     .frame(width: size.width, height: size.height)
                     .scaleEffect(y: isFlipped ? -1 : 1)
             }

@@ -10,42 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State
-    private var hour: [String] = []
-
-    @State
-    private var minute: [String] = []
-
-    @State
-    private var second: [String] = []
+    private var date: Date = .now
 
     var body: some View {
-        HStack(spacing: 20) {
-            HStack {
-                ForEach(hour.indices, id: \.self) { index in
-                    FlapDisplay(hour[index])
-                        .aspectRatio(0.618, contentMode: .fit)
-                }
-            }
+        let dateStyle = Date.FormatStyle()
 
-            HStack {
-                ForEach(minute.indices, id: \.self) { index in
-                    FlapDisplay(minute[index])
-                        .aspectRatio(0.618, contentMode: .fit)
-                }
-            }
+        HStack(spacing: 0) {
+            ClockView(date, style: dateStyle.hour())
 
-            HStack {
-                ForEach(second.indices, id: \.self) { index in
-                    FlapDisplay(second[index])
-                        .aspectRatio(0.618, contentMode: .fit)
-                }
-            }
+            Spacer(minLength: 20)
+
+            ClockView(date, style: dateStyle.minute(.twoDigits))
+
+            Spacer(minLength: 20)
+
+            ClockView(date, style: dateStyle.second(.twoDigits))
         }
         .padding()
         .onReceive(Timer.publish(every: 1, on: .current, in: .common).autoconnect()) { date in
-            hour = date.formatted(Date.FormatStyle().hour()).map(String.init)
-            minute = date.formatted(Date.FormatStyle().minute(.twoDigits)).map(String.init)
-            second = date.formatted(Date.FormatStyle().second(.twoDigits)).map(String.init)
+            self.date = date
         }
     }
 }

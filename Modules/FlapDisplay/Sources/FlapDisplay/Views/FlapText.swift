@@ -1,5 +1,5 @@
 //
-//  ScalableText.swift
+//  FlapText.swift
 //  FlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/7.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScalableText: View {
+struct FlapText: View {
     private let content: String
 
     private let maximumFontSize: CGFloat
@@ -26,8 +26,9 @@ struct ScalableText: View {
 
     var body: some View {
         Text(content)
-            .font(.system(size: maximumFontSize))
+            .font(.system(size: maximumFontSize).bold())
             .minimumScaleFactor(minimumScaleFactor)
+            .monospaced()
             .scaledToFit()
     }
 }

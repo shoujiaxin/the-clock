@@ -42,7 +42,6 @@ public struct FlapDisplay: View {
             Flap(configuration: .init(flapContents.first?.oldValue ?? content))
                 .flip(true)
         }
-
         .onChange(of: content) { oldValue, newValue in
             flapContents.append(.init(oldValue: oldValue, newValue: newValue))
             flippingCount += 1

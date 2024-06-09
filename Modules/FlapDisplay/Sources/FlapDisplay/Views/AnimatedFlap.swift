@@ -19,7 +19,7 @@ struct AnimatedFlap: View {
         Flap(configuration: configuration)
             .flip(flip)
             .onAppear {
-                withAnimation {
+                withAnimation(.easeIn) {
                     flip = true
                 } completion: {
                     completion()
