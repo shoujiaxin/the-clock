@@ -15,18 +15,21 @@ struct ContentView: View {
     var body: some View {
         let dateStyle = Date.FormatStyle()
 
-        HStack(spacing: 0) {
-            ClockView(date, style: dateStyle.hour())
+        GeometryReader { geometry in
+            let size = geometry.size
 
-            Spacer(minLength: 20)
+            HStack(spacing: size.width * 0.05) {
+                ClockView(date, style: dateStyle.hour())
 
-            ClockView(date, style: dateStyle.minute(.twoDigits))
+                ClockView(date, style: dateStyle.minute(.twoDigits))
 
-            Spacer(minLength: 20)
-
-            ClockView(date, style: dateStyle.second(.twoDigits))
+                ClockView(date, style: dateStyle.second(.twoDigits))
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.horizontal, size.width * 0.1)
+            .padding(.vertical, size.height * 0.1)
         }
-        .padding()
+        .ignoresSafeArea()
         .onReceive(Timer.publish(every: 1, on: .current, in: .common).autoconnect()) { date in
             self.date = date
         }

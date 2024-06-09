@@ -44,7 +44,7 @@ struct Flap: View {
             .overlay(alignment: .top) {
                 FlapText(isFlipped ? configuration.backContent : configuration.frontContent)
                     .foregroundStyle(configuration.theme.foregroundColor)
-                    .padding(min(size.width, size.height) * 0.1)
+                    .padding(min(size.width, size.height) * 0.05)
                     .frame(width: size.width, height: size.height)
                     .scaleEffect(y: isFlipped ? -1 : 1)
             }
