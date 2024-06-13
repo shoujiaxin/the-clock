@@ -13,6 +13,8 @@
 		291374062BF90A6400490279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374052BF90A6400490279 /* Assets.xcassets */; };
 		2913740A2BF90A6400490279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374092BF90A6400490279 /* Preview Assets.xcassets */; };
 		299347232C159E090014F22A /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299347222C159E090014F22A /* ClockView.swift */; };
+		2BED6FF32C1A945A00878EAE /* Screen_SaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BED6FF22C1A945A00878EAE /* Screen_SaverView.h */; };
+		2BED6FF52C1A945A00878EAE /* Screen_SaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BED6FF42C1A945A00878EAE /* Screen_SaverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		291374072BF90A6400490279 /* FlipClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipClock.entitlements; sourceTree = "<group>"; };
 		291374092BF90A6400490279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299347222C159E090014F22A /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		2BED6FF02C1A945A00878EAE /* Flippy.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flippy.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BED6FF22C1A945A00878EAE /* Screen_SaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screen_SaverView.h; sourceTree = "<group>"; };
+		2BED6FF42C1A945A00878EAE /* Screen_SaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Screen_SaverView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				290085C42C10C58E0097AC14 /* FlapDisplay in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BED6FED2C1A945A00878EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				291374002BF90A6300490279 /* FlipClock */,
+				2BED6FF12C1A945A00878EAE /* Screen Saver */,
 				290085B92C10BD770097AC14 /* Modules */,
 				291373FF2BF90A6300490279 /* Products */,
 				290085BF2C10BE540097AC14 /* Frameworks */,
@@ -67,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				291373FE2BF90A6300490279 /* Flippy.app */,
+				2BED6FF02C1A945A00878EAE /* Flippy.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +114,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2BED6FF12C1A945A00878EAE /* Screen Saver */ = {
+			isa = PBXGroup;
+			children = (
+				2BED6FF22C1A945A00878EAE /* Screen_SaverView.h */,
+				2BED6FF42C1A945A00878EAE /* Screen_SaverView.m */,
+			);
+			path = "Screen Saver";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BED6FEB2C1A945A00878EAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BED6FF32C1A945A00878EAE /* Screen_SaverView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		291373FD2BF90A6300490279 /* Flippy */ = {
@@ -123,6 +157,24 @@
 			productReference = 291373FE2BF90A6300490279 /* Flippy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2BED6FEF2C1A945A00878EAE /* Screen Saver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BED6FF82C1A945A00878EAE /* Build configuration list for PBXNativeTarget "Screen Saver" */;
+			buildPhases = (
+				2BED6FEB2C1A945A00878EAE /* Headers */,
+				2BED6FEC2C1A945A00878EAE /* Sources */,
+				2BED6FED2C1A945A00878EAE /* Frameworks */,
+				2BED6FEE2C1A945A00878EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Screen Saver";
+			productName = "Screen Saver";
+			productReference = 2BED6FF02C1A945A00878EAE /* Flippy.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,6 +186,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					291373FD2BF90A6300490279 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2BED6FEF2C1A945A00878EAE = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -152,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				291373FD2BF90A6300490279 /* Flippy */,
+				2BED6FEF2C1A945A00878EAE /* Screen Saver */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2BED6FEE2C1A945A00878EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,6 +239,14 @@
 				299347232C159E090014F22A /* ClockView.swift in Sources */,
 				291374042BF90A6300490279 /* ContentView.swift in Sources */,
 				291374022BF90A6300490279 /* FlipClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BED6FEC2C1A945A00878EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BED6FF52C1A945A00878EAE /* Screen_SaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +445,48 @@
 			};
 			name = Release;
 		};
+		2BED6FF62C1A945A00878EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TA5C5ASM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = Screen_SaverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.Flippy.ScreenSaver;
+				PRODUCT_NAME = Flippy;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		2BED6FF72C1A945A00878EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TA5C5ASM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = Screen_SaverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.Flippy.ScreenSaver;
+				PRODUCT_NAME = Flippy;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +504,15 @@
 			buildConfigurations = (
 				291374242BF90A6400490279 /* Debug */,
 				291374252BF90A6400490279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BED6FF82C1A945A00878EAE /* Build configuration list for PBXNativeTarget "Screen Saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BED6FF62C1A945A00878EAE /* Debug */,
+				2BED6FF72C1A945A00878EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
