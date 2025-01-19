@@ -1,19 +1,19 @@
 //
-//  FlapTheme.swift
-//  FlapDisplay
+//  Theme.swift
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/9.
 //
 
 import SwiftUI
 
-enum FlapTheme {
+enum Theme {
     case light
 
     case dark
 }
 
-extension FlapTheme {
+extension Theme {
     var foregroundColor: Color {
         switch self {
         case .light:

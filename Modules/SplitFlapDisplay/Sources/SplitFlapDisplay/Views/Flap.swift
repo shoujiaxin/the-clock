@@ -1,6 +1,6 @@
 //
 //  Flap.swift
-//  FlapDisplay
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/5.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Flap: View {
-    let configuration: FlapConfiguration
+    let configuration: Configuration
 
     private var rotation: Double = 0
 
@@ -24,7 +24,7 @@ struct Flap: View {
         }
     }
 
-    init(configuration: FlapConfiguration) {
+    init(configuration: Configuration) {
         self.configuration = configuration
     }
 

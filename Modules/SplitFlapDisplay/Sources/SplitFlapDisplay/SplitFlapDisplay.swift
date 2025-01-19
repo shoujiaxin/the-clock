@@ -1,17 +1,17 @@
 //
-//  FlapDisplay.swift
-//  FlapDisplay
+//  SplitFlapDisplay.swift
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/5.
 //
 
 import SwiftUI
 
-public struct FlapDisplay: View {
+public struct SplitFlapDisplay: View {
     private let content: String
 
     @State
-    private var flapContents: [FlapContent] = []
+    private var flapContents: [Content] = []
 
     @State
     private var flippingCount: Int = 0
@@ -50,6 +50,6 @@ public struct FlapDisplay: View {
 }
 
 #Preview {
-    FlapDisplay("1")
+    SplitFlapDisplay("1")
         .frame(width: 140, height: 220)
 }

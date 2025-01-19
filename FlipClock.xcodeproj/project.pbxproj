@@ -3,20 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290085C42C10C58E0097AC14 /* FlapDisplay in Frameworks */ = {isa = PBXBuildFile; productRef = 290085C32C10C58E0097AC14 /* FlapDisplay */; };
 		291374022BF90A6300490279 /* FlipClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291374012BF90A6300490279 /* FlipClockApp.swift */; };
 		291374042BF90A6300490279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291374032BF90A6300490279 /* ContentView.swift */; };
 		291374062BF90A6400490279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374052BF90A6400490279 /* Assets.xcassets */; };
 		2913740A2BF90A6400490279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291374092BF90A6400490279 /* Preview Assets.xcassets */; };
 		299347232C159E090014F22A /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299347222C159E090014F22A /* ClockView.swift */; };
+		2BDC84262D3CD94500B921A7 /* SplitFlapDisplay in Frameworks */ = {isa = PBXBuildFile; productRef = 2BDC84252D3CD94500B921A7 /* SplitFlapDisplay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		290085C22C10C5870097AC14 /* FlapDisplay */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlapDisplay; sourceTree = "<group>"; };
 		291373FE2BF90A6300490279 /* Flippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291374012BF90A6300490279 /* FlipClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockApp.swift; sourceTree = "<group>"; };
 		291374032BF90A6300490279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,21 +30,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290085C42C10C58E0097AC14 /* FlapDisplay in Frameworks */,
+				2BDC84262D3CD94500B921A7 /* SplitFlapDisplay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		290085B92C10BD770097AC14 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				290085C22C10C5870097AC14 /* FlapDisplay */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
 		290085BF2C10BE540097AC14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				291374002BF90A6300490279 /* FlipClock */,
-				290085B92C10BD770097AC14 /* Modules */,
 				291373FF2BF90A6300490279 /* Products */,
 				290085BF2C10BE540097AC14 /* Frameworks */,
 			);
@@ -117,7 +107,7 @@
 			);
 			name = Flippy;
 			packageProductDependencies = (
-				290085C32C10C58E0097AC14 /* FlapDisplay */,
+				2BDC84252D3CD94500B921A7 /* SplitFlapDisplay */,
 			);
 			productName = FlipClock;
 			productReference = 291373FE2BF90A6300490279 /* Flippy.app */;
@@ -131,7 +121,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					291373FD2BF90A6300490279 = {
 						CreatedOnToolsVersion = 15.4;
@@ -147,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 291373F52BF90A6300490279;
+			packageReferences = (
+				2BDC84242D3CD94500B921A7 /* XCLocalSwiftPackageReference "Modules/SplitFlapDisplay" */,
+			);
 			productRefGroup = 291373FF2BF90A6300490279 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,6 +209,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -277,6 +271,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -304,6 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -343,6 +339,7 @@
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -397,10 +394,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		2BDC84242D3CD94500B921A7 /* XCLocalSwiftPackageReference "Modules/SplitFlapDisplay" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/SplitFlapDisplay;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		290085C32C10C58E0097AC14 /* FlapDisplay */ = {
+		2BDC84252D3CD94500B921A7 /* SplitFlapDisplay */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FlapDisplay;
+			productName = SplitFlapDisplay;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

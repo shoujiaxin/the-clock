@@ -5,7 +5,7 @@
 //  Created by Jiaxin Shou on 2024/6/9.
 //
 
-import FlapDisplay
+import SplitFlapDisplay
 import SwiftUI
 
 struct ClockView: View {
@@ -23,7 +23,7 @@ struct ClockView: View {
 
         HStack {
             ForEach(content.indices, id: \.self) { index in
-                FlapDisplay(content[index])
+                SplitFlapDisplay(content[index])
                     .aspectRatio(0.618, contentMode: .fit)
             }
         }

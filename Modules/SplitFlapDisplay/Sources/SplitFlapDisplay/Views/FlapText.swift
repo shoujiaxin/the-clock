@@ -1,6 +1,6 @@
 //
 //  FlapText.swift
-//  FlapDisplay
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/7.
 //

@@ -1,20 +1,20 @@
 //
-//  FlapConfiguration.swift
-//  FlapDisplay
+//  Configuration.swift
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/7.
 //
 
 import Foundation
 
-struct FlapConfiguration {
+struct Configuration {
     let frontContent: String
 
     let backContent: String
 
     let cornerRadius: CGFloat?
 
-    let theme: FlapTheme
+    let theme: Theme
 
     let index: Double?
 
@@ -22,7 +22,7 @@ struct FlapConfiguration {
         frontContent: String,
         backContent: String,
         cornerRadius: CGFloat? = nil,
-        theme: FlapTheme = .dark,
+        theme: Theme = .dark,
         index: Double? = nil
     ) {
         self.frontContent = frontContent
@@ -35,7 +35,7 @@ struct FlapConfiguration {
     init(
         _ content: String,
         cornerRadius: CGFloat? = nil,
-        theme: FlapTheme = .dark,
+        theme: Theme = .dark,
         index: Double? = nil
     ) {
         self.init(

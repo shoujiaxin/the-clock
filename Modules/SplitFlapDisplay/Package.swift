@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "flap-display",
+    name: "split-flap-display",
     platforms: [
         .iOS(.v17),
         .macOS(.v14),
@@ -16,18 +16,18 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FlapDisplay",
-            targets: ["FlapDisplay"]
+            name: "SplitFlapDisplay",
+            targets: ["SplitFlapDisplay"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FlapDisplay"),
+            name: "SplitFlapDisplay"),
         .testTarget(
-            name: "FlapDisplayTests",
-            dependencies: ["FlapDisplay"]
+            name: "SplitFlapDisplayTests",
+            dependencies: ["SplitFlapDisplay"]
         ),
     ]
 )

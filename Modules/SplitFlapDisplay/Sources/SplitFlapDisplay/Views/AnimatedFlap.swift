@@ -1,6 +1,6 @@
 //
 //  AnimatedFlap.swift
-//  FlapDisplay
+//  SplitFlapDisplay
 //
 //  Created by Jiaxin Shou on 2024/6/7.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnimatedFlap: View {
-    let configuration: FlapConfiguration
+    let configuration: Configuration
 
     let completion: () -> Void
 
