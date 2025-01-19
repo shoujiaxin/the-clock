@@ -10,6 +10,12 @@ import SwiftUI
 struct Flap: View {
     let configuration: Configuration
 
+    init(configuration: Configuration) {
+        self.configuration = configuration
+    }
+
+    // MARK: - Private States
+
     private var rotation: Double = 0
 
     private var isFlipped: Bool {
@@ -24,9 +30,7 @@ struct Flap: View {
         }
     }
 
-    init(configuration: Configuration) {
-        self.configuration = configuration
-    }
+    // MARK: - Views
 
     var body: some View {
         GeometryReader { geometry in
@@ -80,6 +84,8 @@ extension Flap {
     }
 }
 
+#if DEBUG
+
 #Preview {
     ZStack {
         Flap(configuration: .init("6"))
@@ -87,5 +93,6 @@ extension Flap {
         Flap(configuration: .init("6"))
             .flip(true)
     }
-    .frame(width: 140, height: 220)
 }
+
+#endif

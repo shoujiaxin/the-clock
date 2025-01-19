@@ -24,6 +24,8 @@ struct FlapText: View {
         self.minimumScaleFactor = minimumScaleFactor
     }
 
+    // MARK: - Views
+
     var body: some View {
         Text(content)
             .font(.system(size: maximumFontSize).bold())
@@ -32,3 +34,11 @@ struct FlapText: View {
             .scaledToFit()
     }
 }
+
+#if DEBUG
+
+#Preview {
+    FlapText("A")
+}
+
+#endif

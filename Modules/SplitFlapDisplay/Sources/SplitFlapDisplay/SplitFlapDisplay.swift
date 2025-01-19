@@ -10,15 +10,19 @@ import SwiftUI
 public struct SplitFlapDisplay: View {
     private let content: String
 
+    public init(_ content: String) {
+        self.content = content
+    }
+
+    // MARK: - Private States
+
     @State
     private var flapContents: [Content] = []
 
     @State
     private var flippingCount: Int = 0
 
-    public init(_ content: String) {
-        self.content = content
-    }
+    // MARK: - Views
 
     public var body: some View {
         ZStack {
@@ -49,7 +53,10 @@ public struct SplitFlapDisplay: View {
     }
 }
 
+#if DEBUG
+
 #Preview {
     SplitFlapDisplay("1")
-        .frame(width: 140, height: 220)
 }
+
+#endif
