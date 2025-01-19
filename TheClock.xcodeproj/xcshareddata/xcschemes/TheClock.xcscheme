@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "291373FD2BF90A6300490279"
-               BuildableName = "Flippy.app"
-               BlueprintName = "Flippy"
-               ReferencedContainer = "container:FlipClock.xcodeproj">
+               BuildableName = "TheClock.app"
+               BlueprintName = "TheClock"
+               ReferencedContainer = "container:TheClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "291373FD2BF90A6300490279"
-            BuildableName = "Flippy.app"
-            BlueprintName = "Flippy"
-            ReferencedContainer = "container:FlipClock.xcodeproj">
+            BuildableName = "TheClock.app"
+            BlueprintName = "TheClock"
+            ReferencedContainer = "container:TheClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "291373FD2BF90A6300490279"
-            BuildableName = "Flippy.app"
-            BlueprintName = "Flippy"
-            ReferencedContainer = "container:FlipClock.xcodeproj">
+            BuildableName = "TheClock.app"
+            BlueprintName = "TheClock"
+            ReferencedContainer = "container:TheClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

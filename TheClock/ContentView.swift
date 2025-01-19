@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Flippy
+//  TheClock
 //
 //  Created by Jiaxin Shou on 2024/5/19.
 //
