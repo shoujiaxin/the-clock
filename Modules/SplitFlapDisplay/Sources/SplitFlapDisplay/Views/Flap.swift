@@ -63,7 +63,7 @@ struct Flap: View {
     }
 }
 
-extension Flap: Animatable {
+extension Flap: @preconcurrency Animatable {
     typealias AnimatableData = Double
 
     var animatableData: AnimatableData {

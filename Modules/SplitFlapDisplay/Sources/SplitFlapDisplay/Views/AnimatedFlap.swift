@@ -23,8 +23,7 @@ struct AnimatedFlap: View {
         Flap(configuration: configuration)
             .flip(flip)
             .onAppear {
-                // TODO: Animation curve.
-                withAnimation(.easeIn) {
+                withAnimation(.interpolatingSpring(bounce: 0.25)) {
                     flip = true
                 } completion: {
                     completion()
