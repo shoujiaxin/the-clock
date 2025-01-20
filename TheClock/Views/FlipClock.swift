@@ -9,10 +9,7 @@ import SplitFlapDisplay
 import SwiftUI
 
 struct FlipClock: View {
-    // MARK: - Private States
-
-    @State
-    private var date: Date = .now
+    let date: Date
 
     // MARK: - Views
 
@@ -43,9 +40,6 @@ struct FlipClock: View {
             .padding(.vertical, size.height * 0.1)
         }
         .ignoresSafeArea()
-        .onReceive(Timer.publish(every: 1, on: .current, in: .common).autoconnect()) { date in
-            self.date = date
-        }
     }
 
     @ViewBuilder
@@ -64,7 +58,7 @@ struct FlipClock: View {
 #if DEBUG
 
 #Preview {
-    FlipClock()
+    FlipClock(date: .now)
 }
 
 #endif
