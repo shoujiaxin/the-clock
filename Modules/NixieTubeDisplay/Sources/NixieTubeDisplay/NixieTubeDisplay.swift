@@ -18,8 +18,10 @@ public struct NixieTubeDisplay: View {
 
     public var body: some View {
         HStack(spacing: 0) {
-            ForEach(Array(content), id: \.self) { character in
-                NixieTube(content: character)
+            let characters = Array(content)
+
+            ForEach(characters.indices, id: \.self) { index in
+                NixieTube(content: characters[index])
             }
         }
     }

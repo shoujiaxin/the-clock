@@ -21,7 +21,7 @@ struct ContentView: View {
 
             NixieTubeClock(date: date)
         }
-        .tabViewStyle(.page)
+//        .tabViewStyle(.page)
         .onReceive(Timer.publish(every: 1, on: .current, in: .common).autoconnect()) { date in
             self.date = date
         }
